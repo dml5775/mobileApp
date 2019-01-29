@@ -1,0 +1,57 @@
+@import "@assets/style/color.scss";
+@import "@assets/style/atom.scss";
+.shops-box {
+    background-color: $yd_white;
+    .shop {
+        padding: 0.3rem;
+        display: flex;
+        cursor: pointer;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $yd_border_gray;
+        }
+        img {
+            width: 1.72rem;
+            height: 1.72rem;
+        }
+        .name-main {
+            padding: 0 0.3rem;
+            flex: 1;
+            p {
+                margin-bottom: 10px;
+                font-size: $yd_normal_l;
+            }
+            span {
+                color: $yd_gray_l_1;
+            }
+        }
+        .distance {
+            color: $yd_green;
+        }
+    }
+}
+
+.symbol-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .symbol {
+        margin: 0 5px;
+        border-radius: 4px;
+        padding: 2px 8px;
+        margin-top: 5px;
+        &.discount {
+            background-color: $yd_green;
+            color: $yd_white!important;
+        }
+        &.subtraction {
+            background-color: $yd_orange;
+            color: $yd_white!important;
+        }
+    }
+}
+
+.my-search {
+    overflow: hidden;
+    .van-search__action {
+        color: $yd_white;
+    }
+}

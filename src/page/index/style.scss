@@ -1,0 +1,204 @@
+@import "@assets/style/color.scss";
+@import "@assets/style/atom.scss";
+.index {
+    height: 100%;
+    overflow: hidden;
+}
+
+.search-head {
+    display: flex;
+    background-color: $yd_white;
+    padding: 0.24rem 0.16rem 0.12rem;
+    p {
+        flex: 1;
+        font-size: $yd_normal_l;
+        color: $yd_green;
+    }
+}
+
+.show-grid-8 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $yd_white;
+    padding: 0.2rem 0;
+    font-size: $yd_smaller;
+    color: $yd_black_l_1;
+    .icon {
+        font-size: 0.54rem;
+        color: $yd_green;
+    }
+    .icon-repast,
+    .icon-dianying,
+    .icon-jiudian,
+    .icon-gouwu {
+        color: $yd_orange;
+    }
+    .show-grid-cell {
+        width: 25%;
+        height: 1.2rem;
+        padding: 0.1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $yd_white;
+    padding: 0.1rem 0;
+    margin: 0.05rem 0 0.2rem;
+    color: $yd_gray_l_1;
+    .o-cell {
+        max-width: 25%;
+        padding: 0 0.1rem;
+        flex: 1;
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+
+.filter-box-top {
+    position: relative;
+    z-index: 100;
+    .filter-box {
+        margin: 0;
+        border-bottom: 1px solid $yd_border_gray;
+        position: relative;
+        z-index: 1000;
+    }
+}
+
+.optionsBox {
+    background-color: $yd_bg_gray;
+    max-height: 5.44rem;
+    display: none;
+    overflow-y: auto;
+    position: relative;
+    ul,
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 31, 31, 0.308);
+    z-index: 10;
+}
+
+.shops-box {
+    background-color: $yd_white;
+    .shop {
+        padding: 0.3rem;
+        display: flex;
+        cursor: pointer;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $yd_border_gray;
+        }
+        img {
+            width: 1.72rem;
+            height: 1.72rem;
+        }
+        .name-main {
+            padding: 0 0.3rem;
+            flex: 1;
+            p {
+                margin-bottom: 10px;
+                font-size: $yd_normal_l;
+            }
+            span {
+                color: $yd_gray_l_1;
+            }
+        }
+        .distance {
+            color: $yd_green;
+        }
+    }
+}
+
+.symbol-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .symbol {
+        margin: 0 5px;
+        border-radius: 4px;
+        padding: 2px 8px;
+        margin-top: 5px;
+        &.discount {
+            background-color: $yd_green;
+            color: $yd_white!important;
+        }
+        &.subtraction {
+            background-color: $yd_orange;
+            color: $yd_white!important;
+        }
+    }
+}
+
+.first-ul {
+    li {
+        padding: 0.2rem 0.3rem;
+    }
+    li.active {
+        background-color: $yd_white;
+        color: $yd_green;
+    }
+}
+
+.second-ul {
+    position: fixed;
+    width: 50%;
+    top: 0.56rem;
+    right: 0;
+    height: 5.44rem;
+    overflow-y: auto;
+    ul {
+        min-height: 100%;
+        background: $yd_white;
+        padding-left: 0.2rem;
+        li {
+            padding: 0.2rem 0.1rem;
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $yd_border_gray;
+            }
+        }
+        li.active {
+            color: $yd_green;
+        }
+    }
+}
+
+.my-search {
+    width: 75%;
+    border-radius: 20px;
+    border: 1px solid $yd_border_gray;
+    overflow: hidden;
+    &.van-search {
+        padding: 0;
+    }
+    .van-cell__left-icon {
+        font-size: $yd_normal_s;
+        line-height: 16px;
+    }
+    .van-cell {
+        line-height: 16px;
+    }
+}

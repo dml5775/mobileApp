@@ -1,0 +1,64 @@
+@import "@assets/style/color.scss";
+@import "@assets/style/atom.scss";
+.my-panel-body {}
+
+.logo-wrap {
+    padding: 0.8rem 0.3rem;
+    margin-bottom: 10px;
+    background-color: $yd_white;
+    text-align: center;
+    img {
+        display: block;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0 auto;
+    }
+    h3 {
+        color: $yd_bOrange;
+        font-size: $yd_normal_l;
+        font-weight: 400;
+    }
+    p {
+        font-weight: 600;
+    }
+}
+
+.longBtn {
+    width: 100%;
+    margin: 1rem 0 0.3rem;
+    color: $yd_white;
+    background: $yd_green;
+    padding: 0.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.van-panel__header .van-cell__value {
+    color: $yd_green;
+}
+
+.dis {
+    .van-cell__value {
+        color: $yd_bOrange;
+        font-size: $yd_normal_l;
+    }
+}
+
+.outDis {
+    .van-cell__value {
+        color: $yd_gray_l_1;
+    }
+}
+
+.van-panel .van-cell .van-cell__title {
+    font-weight: 600;
+}
+
+.van-panel.van-cell {
+    font-size: $yd_smaller;
+    justify-content: space-between;
+    .van-cell__title,
+    .van-cell__value {
+        flex: auto;
+    }
+}

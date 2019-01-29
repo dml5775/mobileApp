@@ -1,0 +1,21 @@
+@import "@assets/style/color.scss";
+.my-search {
+    overflow: hidden;
+    .van-search__action {
+        color: $yd_white;
+    }
+    * {
+        font-size: 0.2rem!important;
+    }
+}
+
+.my-city-list {
+    background: #fff;
+    padding-left: 0.3rem;
+    li {
+        padding: 0.3rem 0 0.2rem;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $yd_border_gray;
+        }
+    }
+}

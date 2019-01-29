@@ -1,0 +1,42 @@
+@import "./color.scss";
+@import "./atom.scss";
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $yd_normal;
+    color: $yd_black;
+    background-color: $yd_bg_gray;
+    height: 100%;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+.text-ellip {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+::-webkit-input-placeholder {
+    color: lighten($yd_gray, 20%)!important;
+    font-size: 0.2rem!important;
+}
+
+.sto {
+    position: fixed;
+    right: 0.5rem;
+    bottom: 1rem;
+    font-size: 0.5rem!important;
+    color: $yd_gray_l_1;
+}

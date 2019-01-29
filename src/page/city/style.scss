@@ -1,0 +1,40 @@
+@import "@assets/style/color.scss";
+@import "@assets/style/atom.scss";
+.my-city-wrap {
+    padding: 0.2rem 0.3rem;
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.my-city {
+    display: inline-block;
+    padding: 4px 12px;
+    background: $yd_green;
+    color: $yd_white;
+    border-radius: 5px;
+}
+
+.my-search {
+    * {
+        font-size: $yd_small!important;
+    }
+}
+
+.index-p {
+    color: $yd_gray;
+    padding: 0.2rem 0.3rem;
+    font-size: $yd_normal_l;
+}
+
+.index-city-wrap {
+    padding-left: 0.3rem;
+    background-color: $yd_white;
+}
+
+.index-city {
+    padding: 0.3rem 0 0.2rem;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid $yd_border_gray;
+    }
+}
